@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 5% auto;
+}
+.choice{
+    font-size: 3em;
+    cursor: pointer;
+}
+.choice:hover{
+    transform: scale(1.5);
+}
+h1{
+    margin-bottom: .65em;
+}
+.results{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 5% auto;
+}
+.user-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.computer-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-history div,.computer-history div{
+    font-size:2em;
+}
+@media only screen and (min-width:750px){
+    .choices{
+        width: 60%;
+    }
+    .results{
+        width: 60%;
+    }
+    .choice{
+        font-size: 4em;
+    }
+}
+@media only screen and (min-width:1200px){
+    .choices{
+        width: 40%;
+    }
+    .results{
+        width: 40%;
+    }
+    .choice{
+        font-size: 5em;
+    }
+}
